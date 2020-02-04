@@ -1,6 +1,7 @@
 checkpoint/
-
-
+checkpoint_dirs/
+docs/
+examples/
 
 .vscode
 
