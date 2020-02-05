@@ -27,6 +27,10 @@ Body format:
 
 ```
 
+Install dependencies with:
+pip3 --no-cache-dir install tensorflow==1.15.2 gpt-2-simple starlette uvicorn ujson
+
+
 
 # ORIGINAL INSTRUCTIONS FROM REPO FOLLOW (deploy as Docker or run with GPU)
 
