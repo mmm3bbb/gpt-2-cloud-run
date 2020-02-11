@@ -122,7 +122,7 @@ async def homepage(request):
                          )[0]
 
     generate_count += 1
-    if generate_count >= 20:
+    if generate_count >= 8:
         # Reload model to prevent Graph/Session from going OOM
         tf.reset_default_graph()
         sess.close()

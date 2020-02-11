@@ -27,8 +27,25 @@ Body format:
 
 ```
 
-Install dependencies with:
-pip3 --no-cache-dir install tensorflow==1.15.2 gpt-2-simple starlette uvicorn ujson
+# Clone repo
+git clone https://github.com/mmm3bbb/gpt-2-cloud-run.git
+cd gpt-2-cloud-run
+
+# Create model directory and download model
+mkdir checkpoint
+cd checkpoint
+wget  https://fullyrun.s3.amazonaws.com/self-dialog-gpt-2-models.zip
+unzip self-dialog-gpt-2-models.zip     (if not installed, sudo apt install unzip to install)
+mv sd-no-topic/run1 .
+cd ..
+
+pip3 --no-cache-dir install tensorflow==1.15.2 gpt-2-simple starlette uvicorn ujson.   (If pip3 not installed, sudo apt install python3-pip; if you get an error “No matching distribution for tensorflow=1.5.2 then enter 'sudo -H pip3 install --upgrade pip’ and try again)
+
+python app.py
+
+
+
+
 
 
 
